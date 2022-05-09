@@ -13,7 +13,9 @@ function App() {
         const response = await fetch(url);
         const responseJson = await response.json();
         console.log(responseJson)
+        console.log(responseJson.Search)
         if (responseJson.Search) {
+            console.log(typeof responseJson.Search)
             setMovies(responseJson.Search);
         }else{
             alert("Movie Not Found")

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.container{
+    width: 100%;
+    height: 100%;
+
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    
+}
+
+.blurDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.bgImage{
+    height: max-content;
+    width: 100%;
+    margin-top: -1600px;
+}
+
+.detailDiv{
+    display:flex;
+    z-index: 1;
+    width: 95.5%;
+    height: 80%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(225, 225, 225, 0.3);
+    margin-top: -1408px;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+
+#poster{
+    margin-top: 85px;
+    margin-left: 70px;
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+
+.closeIcon{
+    margin-top: 10px;
+    margin-right: 17px;
+    font-size: 20px;
+    position:absolute;
+    right:0;
+}
+
+.closeIcon:hover{
+    cursor: pointer;
+	color: gray;
+}
+
+.textDiv{
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 70px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#year{
+    margin-top: -20px;
+    font-size: 15px;   
+    color: rgb(180, 180, 180);
+}
+
+#genre{
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+}
+
+#plot{
+    margin-top: 50px;
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+}
+
+.dot{
+    font-size: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* #span{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: yellow;
+    border-radius: 50px;
+    color: black;
+    margin-right: 5px;
+} */
+
