@@ -39,10 +39,12 @@
 
 
 #poster{
-    margin-top: 85px;
-    margin-left: 70px;
+    /* margin-top: 85px;
+    margin-left: 70px; */
+    margin-top: 40px;
+    margin-left: 40px;
     border-radius: 5px;
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
 }
 
 .closeIcon{
@@ -61,7 +63,7 @@
 .textDiv{
     width: 700px;
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -82,9 +84,16 @@
 }
 
 #plot{
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 15px;
     color: rgb(180, 180, 180);
+}
+
+#ratingTime{
+    margin-top: 35px;
+    font-size: 20px;
+    color: rgb(200, 200, 200);
+    font-weight: 600;
 }
 
 .dot{
@@ -104,3 +113,32 @@
     margin-right: 5px;
 } */
 
+#director{
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+    margin-bottom: 0;
+}
+
+#writer{
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+}
+
+#starring{
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+
+}
+
+/* #movieDetail{
+    margin-left: 10px;
+} */
+
+#ver{ 
+    border-left: 1px solid ;
+    height:80%;
+    margin-top: 60px;
+    margin-left: 50px;
+}

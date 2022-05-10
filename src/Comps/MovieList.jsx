@@ -14,8 +14,8 @@ export default function MovieList(props) {
         // setCatalouge(false)
         
         // console.log(movie.Title)
-        // const url = `http://www.omdbapi.com/?t=${movie.Title}&apikey=588aec62`;
-        const url = `http://www.omdbapi.com/?t=aquaman&apikey=588aec62`;
+        const url = `http://www.omdbapi.com/?t=${movie.Title}&apikey=588aec62`;
+        // const url = `http://www.omdbapi.com/?t=aquaman&apikey=588aec62`;
         const response = await fetch(url);
         const responseJson = await response.json();
 
@@ -35,7 +35,7 @@ export default function MovieList(props) {
 
     return (
         <>
-        {/* {loader ? loader && <Card moviesDetail = {moviesDetail}/> :
+        {loader ? loader && <Card moviesDetail = {moviesDetail}/> :
             <div className='movieDiv'>
                 {props.movies.map((movie, index) => (
                     <div className='imageContainer' key={index} onClick={()=>card(movie)}>
@@ -44,9 +44,9 @@ export default function MovieList(props) {
                     </div>
                 ))}
             </div> 
-        } */}
-        {loader ? null : <button className='testBtn' onClick={()=>card()}>GO</button>}
-        {loader ? <Card moviesDetail = {moviesDetail}/> : null}
+        }
+        {/* {loader ? null : <button className='testBtn' onClick={()=>card()}>GO</button>}
+        {loader ? <Card moviesDetail = {moviesDetail}/> : null} */}
             
         </>
     )
