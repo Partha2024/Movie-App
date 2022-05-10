@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MovieList from './Comps/MovieList';
 
@@ -9,13 +9,9 @@ function App() {
 
     async function go(){
         const url = `http://www.omdbapi.com/?s=${movieName}&apikey=588aec62`;
-        // const url = `http://www.omdbapi.com/?s=cars&apikey=588aec62`;
         const response = await fetch(url);
         const responseJson = await response.json();
-        console.log(responseJson)
-        console.log(responseJson.Search)
         if (responseJson.Search) {
-            console.log(typeof responseJson.Search)
             setMovies(responseJson.Search);
         }else{
             alert("Movie Not Found")
@@ -30,10 +26,10 @@ function App() {
         <div className='container'>
 
             <div className="header">  
-                <span className="heading">OMDB</span>
+                <span className="heading">Movie Catalouge</span>
                 <span className='searchArea'>
                     <input type="text" name="movieName" id="searchBar" onChange={(e)=>setMovieName(e.target.value)} placeholder = "Type Movie Name"/>   
-                    <button type='submit' className="runBtn" onClick = {()=> go()}>GO</button>
+                    <button type='submit' className="runBtn" onClick = {()=> go()}>Go</button>
                 </span>
             </div>
 
