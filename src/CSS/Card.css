@@ -1,31 +1,3 @@
-.movieDiv{
-    height: 100%;
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.imageContainer:hover{
-    cursor: pointer;
-	transform: scale(1.1);
-}
-
-.imageContainer {
-    margin-top: 20px;
-    margin-left: 105px;
-}
-
-img{
-    height: 250px;
-    width: 180px;
-}
-
-.titleDiv{
-    width: 140px;
-    padding: 5px;
-    text-align: start;
-}
-
 /* card.css  */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 .container{
@@ -61,7 +33,7 @@ img{
     height: 80%;
     backdrop-filter: blur(10px);
     background-color: rgba(225, 225, 225, 0.3);
-    margin-top: -1408px;
+    margin-top: -1370px;
     border-radius: 10px;
     margin-left: 35px;
 }
